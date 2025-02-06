@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Services from "./Services";
@@ -10,6 +11,7 @@ import "./style.css"; // Import styles
 function App() {
     return (
         <>
+            <Header />
             <Navbar />
             <HeroSection />
             <Services />
