@@ -18,7 +18,7 @@ function HeroSection() {
                     </ul>
                     </div>
                 </div>
-                <div>
+                <div className="boxDefault">
                     <h2>Welcome to Our IT Services</h2>
                     <p>Providing top-notch IT solutions for your business needs.</p>
                     <a href="#contact" className="btn">Get Started</a>
