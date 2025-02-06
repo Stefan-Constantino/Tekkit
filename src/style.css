@@ -85,4 +85,16 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
 }
+#NYBusinessBox{
+    background-color:  #4c8dfd;
+}
+.custom-bullets li::before {
+    list-style-type: none   ;
+    content: ">";
+    color: #007bff; 
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  
 
