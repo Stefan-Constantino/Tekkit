@@ -4,7 +4,7 @@ function HeroSection() {
     return (
         <div id="home">
             <div id="HeroContainer">
-                 <div>
+                 <div id="managesecuredefend">
                     <h2>Manage. Secure. Defend. </h2>
                     <h1>Let us handle all your IT needs</h1>
                     <div id="NYBusinessBox">

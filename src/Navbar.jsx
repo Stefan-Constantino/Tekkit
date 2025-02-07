@@ -4,7 +4,7 @@ import React from "react";
 function Navbar() {
     return (
         <header>
-            <div className="container">
+            <div id="navbar-container">
                 <img id="logo" src="tekkit.png" alt="Tekk-It Logo" />
                 <nav>
                     <ul>
