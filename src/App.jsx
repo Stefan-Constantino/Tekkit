@@ -24,7 +24,6 @@ function App() {
                         <Services />
                         <Problem />
                         <Solution />
-                        <About />
                     </>
                 } />
                 <Route path="/contact" element={<Contact />} />
