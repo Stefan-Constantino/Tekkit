@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
@@ -15,12 +16,20 @@ function App() {
         <>
             <Header />
             <Navbar />
-            <HeroSection />
-            <Services />
-            <Problem/>
-            <Solution/>
-            <About />
-            <Contact />
+            {/* Define Routes here */}
+            <Routes>
+                <Route path="/" element={
+                    <>
+                        <HeroSection />
+                        <Services />
+                        <Problem />
+                        <Solution />
+                        <About />
+                    </>
+                } />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
             <Footer />
         </>
     );
