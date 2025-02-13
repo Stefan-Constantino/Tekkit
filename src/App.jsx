@@ -41,19 +41,19 @@ function App() {
                 } />
                 <Route path="/about" element={
                     <>
-                        <div id="aboutpage">
+                        <div id="home">
                             <Navbar />
-                            <About />
                         </div>
+                        <About />
                         <AboutUsList/>
                     </> 
                     } />
                 <Route path="/ticket" element={
                 <>
-                    <div id="aboutpage">
+                    <div id="home">
                         <Navbar/>
-                        <Ticket/>
                     </div>
+                    <Ticket/>
                 </> 
                 } />
             </Routes>
