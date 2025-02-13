@@ -10,24 +10,52 @@ import Footer from "./Footer";
 import Problem from "./Problem";
 import Solution from "./Solution";
 import "./style.css";
+import AboutUsList from "./AboutUsList";
+import Ticket from "./Ticket";
 
 function App() {
     return (
         <div className="app-container">
             <Header />
-            <Navbar />
+            
             {/* Define Routes here */}
             <Routes>
                 <Route path="/" element={
-                    <>
-                        <HeroSection />
+                    <>  
+                        <div id="home1">
+                            <Navbar />
+                            <HeroSection />
+                        </div>
                         <Services />
                         <Problem />
                         <Solution />
                     </>
                 } />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={
+                    <>
+                        <div id="home">
+                            <Navbar />
+                        </div>
+                        <Contact />
+                    </> 
+                } />
+                <Route path="/about" element={
+                    <>
+                        <div id="aboutpage">
+                            <Navbar />
+                            <About />
+                        </div>
+                        <AboutUsList/>
+                    </> 
+                    } />
+                <Route path="/ticket" element={
+                <>
+                    <div id="aboutpage">
+                        <Navbar/>
+                        <Ticket/>
+                    </div>
+                </> 
+                } />
             </Routes>
             <Footer />
         </div>

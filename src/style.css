@@ -1,3 +1,10 @@
+/*
+by changing image-blend-color, you can change the way all the images 
+blend and/or change the color 
+*/
+:root {
+    --image-blend-color:#61892f;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -38,13 +45,14 @@ body, html {
     display: flex;
     gap: 10px;
 }
+.row1{
+    display: flex;
+    flex-direction: row;
+}
 
 header {
-    background: rgba(32, 50, 86, .9);
-    color: #fff;
-    padding-top: 20px;
-    min-height: 70px;
-    /* border-bottom: #77aaff 3px solid; */
+   margin: 0;
+   color: #fff;
 }
 
 header a {
@@ -66,7 +74,7 @@ header li {
 
 header nav {
     float: right;
-    margin-top: 10px;
+   
 }
 
 #home {
@@ -76,9 +84,29 @@ header nav {
     background-repeat: no-repeat; 
     width: 100%;
     height: 100%;
-    padding-top: 100px;
-    min-height: 400px;
     text-align: center;
+}
+#home1 {
+    background-image:url(../Office1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: var(--image-blend-color);
+    background-blend-mode:overlay; 
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#home1 .btn {
+    display: inline-block;
+    color: black;
+    background: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 60px;
 }
 
 #home .btn {
@@ -96,6 +124,9 @@ header nav {
     padding: 50px 0;
     text-align: center;
 }
+#services{
+    background-color:#6b6e70 ;
+}
 
 .service {
     border: 1px solid #ccc;
@@ -103,7 +134,10 @@ header nav {
     padding: 20px;
     border-radius: 5px;
 }
-
+.smallicons{
+    height: 50px;
+    width: auto;
+}
 footer {
     background: #10141f;
     color: #fff;
@@ -113,26 +147,51 @@ footer {
 }
 
 #navbar-container{
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 30%;
+    height: 80%;
+
 }
 
-#logo{
-    width: 100px;
-    height:100px;
+#navbar{
+    padding-right: 10%;
+    padding-left: 20%;
 }
-
+#navheader{
+    padding-right: 20%;
+}
+#logo1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+#logo-container{
+    width: 5%;
+    height: 5%;
+}
+.logo-container2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+}
 #HeroContainer{
+    padding-top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-bottom: 3%;
 }
 #NYBusinessBox{
     background-color:  #5a72b8;
 }
 
 #managesecuredefend{
-    background-color: rgb(207, 201, 201, .6);
+    background-color: rgba(236, 223, 223, 0.774);
     border-radius: 15px;
     padding: 20px;
 }
@@ -153,6 +212,7 @@ footer {
 .supHeader{
     background: #10141f;
     padding-top: 1px;
+    margin-bottom: 0;
 
 }
 .supHeader a{
@@ -164,46 +224,65 @@ footer {
 .boxDefault{
     width: 400px;
     height: 240px;
-    background-color: #5a72b8;
+    background-color: rgb(236, 223, 223);;
     /* border: 2px solid #10141f; */
     color: black;
     border-radius: 40px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-#about{
-    background: #2d3f63;
-    color: black;
+#dontworry{
+    height: 6%;
 }
 
-#about #home{
+
+#aboutpage {
+    background-image: url(../public/About.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: var(--image-blend-color);
+    background-blend-mode:overlay; 
+
+    color: white;
+}
+/* 
+change color of HeroSection Img
+*/
+#home{
     background-image: url(../SolutionSection.jpg);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
-    background-color: rgba(32, 50, 86, .9);
-    background-blend-mode: overlay; 
+    background-color: var(--image-blend-color);
+    background-blend-mode:overlay; 
     color: white;
 }
 
 
 #problem{
-    background: #2d3f63;
+    background: #76787a;
 }
 .centeredtext{
     text-align: center;
 }
 .card {
     width: 100%;
-    height: auto;
+    height: 30%;
     background-color: rgb(184, 184, 197);
     clip-path: polygon(0% 0%, 45% 0%, 50% 10%, 55% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
+#card-container{
+    width: 50%;
+}
+#card_paragraph{
+    padding: 3%;
+}
 
 #img2{
-    width: 500px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .aboutUsList {

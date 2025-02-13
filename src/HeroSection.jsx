@@ -1,8 +1,9 @@
 import React from "react";
+import Contact from "./Contact";
 
 function HeroSection() {
     return (
-        <div id="home">
+        <div >
             <div id="HeroContainer">
                  <div id="managesecuredefend">
                     <h2>Manage. Secure. Defend. </h2>
@@ -18,10 +19,15 @@ function HeroSection() {
                     </ul>
                     </div>
                 </div>
-                <div className="boxDefault">
-                    <h2>Welcome to Our IT Services</h2>
-                    <p>Providing top-notch IT solutions for your business needs.</p>
-                    <a href="#contact" className="btn">Get Started</a>
+                {/*
+                
+                <Contact/>
+                */}
+                <div className="boxDefault" >
+                    <h2 id="dontworry">Don't Worry </h2>
+                    <h1>We're Here To Help</h1>
+                    <p>Schedule a quick meeting or phone-call to learn more</p>
+                    <a href="contact" className="btn">Get Started</a>
                 </div>
                 
             </div>

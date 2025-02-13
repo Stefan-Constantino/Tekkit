@@ -29,7 +29,7 @@ const Contact = () => {
               <input
                 {...register("organization")}
                 type="text"
-                placeholder="Organization"
+                placeholder="Company Name"
               />
             </div>
     

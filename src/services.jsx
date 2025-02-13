@@ -8,18 +8,22 @@ function Services() {
                 <h2>Our Services</h2>
                     <div className="row">
                         <div className="service">
+                            <img src="public\twentyfour7sup.png" alt="" className="smallicons" />
                             <h3>24/7 Monitoring & Support</h3>
                             <p>Continuous monitoring of systems and networks to ensure they run smoothly and offering help desk supporet for troubleshooting and technical issues.</p>
                         </div>
                         <div className="service">
+                        <img src="public\service.png" alt="" className="smallicons" />
                             <h3>IT Consulting & Strategy</h3>
                             <p>Providing expert advice on IT infrastructure, helping businesses align tehcnoogy with their goals and plane for future growth.</p>
                         </div>
                         <div className="service">
+                        <img src="public\datarecovery.png" alt="" className="smallicons" />
                             <h3>Data Backup & Recovery</h3>
                             <p>Regular backups of critical data and a disaster recovery plan to ensure business continuity in case of hardware failure, data loss, or natural disasters.</p>
                         </div>
                         <div className="service">
+                        <img src="public\cyber_sec.png" alt="" className="smallicons" />
                             <h3>Cybersecurity</h3>
                             <p>Implementing security measures like firewalls, antivirus software, threat detection, and encryption to protect against cyberattacks and data breaches.</p>
                         </div>
