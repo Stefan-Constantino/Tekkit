@@ -16,49 +16,53 @@ import Ticket from "./Ticket";
 function App() {
     return (
         <div className="app-container">
-            <Header />
-            
-            {/* Define Routes here */}
-            <Routes>
-                <Route path="/" element={
-                    <>  
-                        <div id="home1">
-                            <Navbar />
-                            <HeroSection />
-                        </div>
-                        <Services />
-                        <Problem />
-                        <Solution />
-                    </>
-                } />
-                <Route path="/contact" element={
+            <div className="maincontent">
+                <Header />
+                
+                {/* Define Routes here */}
+                <Routes>
+                    <Route path="/" element={
+                        <>  
+                            <div id="home1">
+                                <Navbar />
+                                <HeroSection />
+                            </div>
+                            <Services />
+                            <Problem />
+                            <Solution />
+                        </>
+                    } />
+                    <Route path="/contact" element={
+                        <>
+                            <div id="home">
+                                <Navbar />
+                            </div>
+                            <Contact />
+                        </> 
+                    } />
+                    <Route path="/about" element={
+                        <>
+                            <div id="home">
+                                <Navbar />
+                            </div>
+                            <About />
+                            <AboutUsList/>
+                        </> 
+                        } />
+                    <Route path="/ticket" element={
                     <>
                         <div id="home">
-                            <Navbar />
+                            <Navbar/>
                         </div>
-                        <Contact />
-                    </> 
-                } />
-                <Route path="/about" element={
-                    <>
-                        <div id="home">
-                            <Navbar />
-                        </div>
-                        <About />
-                        <AboutUsList/>
+                        <Ticket/>
                     </> 
                     } />
-                <Route path="/ticket" element={
-                <>
-                    <div id="home">
-                        <Navbar/>
-                    </div>
-                    <Ticket/>
-                </> 
-                } />
-            </Routes>
+                </Routes>
+                
+            </div>
             <Footer />
         </div>
+        
     );
 }
 

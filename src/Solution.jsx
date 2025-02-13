@@ -13,7 +13,7 @@ function Solution() {
                         <div className="row1">
                             <div id="card-container">
                                 <div className="logo-container2">
-                                    <img id="logo" src="tekkit.png" alt="tekkitlogo" />
+                                    <img id="logo" src="tekkit3.png" alt="tekkitlogo" />
                                 </div>
                                 
                                 <p id="card_paragraph">No business should neglect crucial IT tasks due to condescending support from their IT company, complicated pricing, and reactive services.

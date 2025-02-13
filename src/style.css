@@ -15,9 +15,10 @@ body {
     line-height: 1.6;
 }
 
-body, html {
+body, html ,#root {
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
  ul {
@@ -29,9 +30,10 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+
 }
 
-.main-content {
+.maincontent {
     flex-grow: 1; 
 }
 
@@ -43,6 +45,11 @@ body, html {
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+.containerf{
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
@@ -133,10 +140,9 @@ header nav {
 }
 
 .service {
-    border: 1px solid #ccc;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
+    background: lightblue;
+    padding: 2%;
+    border-radius: 20px;
 }
 .smallicons{
     height: 50px;
@@ -147,7 +153,8 @@ footer {
     color: #fff;
     text-align: center;
     margin-top: auto;
-    /* padding: 30px 0; */
+    bottom: 0;
+    width: 100%;
 }
 
 #navbar-container{
@@ -264,9 +271,13 @@ change color of HeroSection Img
     color: white;
 }
 
-
+#solution{
+    background-color: var(--image-blend-color3);
+}
 #problem{
-    background: #76787a;
+    background:var(--image-blend-color5);
+    padding-bottom: 3%;
+    color: white;
 }
 .centeredtext{
     text-align: center;
