@@ -2,6 +2,12 @@
 by changing image-blend-color, you can change the way all the images 
 blend and/or change the color 
 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 :root {
     --image-blend-color3:#61892f;
     --image-blend-color2:#86c232;
@@ -42,8 +48,8 @@ body, html ,#root {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 100%; /* Use full width for container */
+    margin: 0 auto; /* Center it horizontally */
     overflow: hidden;
 }
 .containerf{
@@ -145,8 +151,9 @@ header nav {
     border-radius: 20px;
 }
 .smallicons{
-    height: 50px;
     width: auto;
+    height: 50px;
+    max-width: 100%;
 }
 footer {
     background: #10141f;
@@ -190,11 +197,13 @@ footer {
     height: 35%;
 }
 #HeroContainer{
-    padding-top: 3%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 #NYBusinessBox{
     background-color:  #5a72b8;
@@ -203,16 +212,18 @@ footer {
 #managesecuredefend{
     background-color: rgba(236, 223, 223, 0.774);
     border-radius: 15px;
-    padding: 20px;
-    width: 20%;
+    flex: 1;
+    width: auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 .custom-bullets li{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 8px;
 }
 .custom-bullets li::before {
-    list-style-type: none;
     content: ">";
     color: #007bff; 
     font-weight: bold;
@@ -235,13 +246,14 @@ footer {
 }
 
 .boxDefault{
-    width: 25%;
+    width: 100%;
     height: 10%;
     background-color:var(--image-blend-color);
     color: black;
     border-radius: 40px;
-    padding: 20px;
+    padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 #dontworry{
     height: 6%;
@@ -255,9 +267,16 @@ footer {
     background-repeat: no-repeat; 
     background-color: var(--image-blend-color);
     background-blend-mode:overlay; 
-
     color: white;
 }
+
+.centered-heading {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+
+
 /* 
 change color of HeroSection Img
 */
