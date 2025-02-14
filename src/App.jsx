@@ -12,11 +12,12 @@ import Solution from "./Solution";
 import "./style.css";
 import AboutUsList from "./AboutUsList";
 import Ticket from "./Ticket";
+import MapComponent from "./MapComponent";
 
 function App() {
     return (
-        <div className="app-container">
-            <div className="maincontent">
+        <div className="app-container flex flex-col min-h-screen">
+            <div className="maincontent flex-grow">
                 <Header />
                 
                 {/* Define Routes here */}
@@ -37,7 +38,10 @@ function App() {
                             <div id="home">
                                 <Navbar />
                             </div>
-                            <Contact />
+                            <div className="row">
+                                <MapComponent />
+                                <Contact />
+                            </div>
                         </> 
                     } />
                     <Route path="/about" element={
@@ -46,23 +50,22 @@ function App() {
                                 <Navbar />
                             </div>
                             <About />
-                            <AboutUsList/>
+                            <AboutUsList />
                         </> 
-                        } />
+                    } />
                     <Route path="/ticket" element={
-                    <>
-                        <div id="home">
-                            <Navbar/>
-                        </div>
-                        <Ticket/>
-                    </> 
+                        <>
+                            <div id="home">
+                                <Navbar />
+                            </div>
+                            <Ticket />
+                        </> 
                     } />
                 </Routes>
                 
             </div>
             <Footer />
         </div>
-        
     );
 }
 
