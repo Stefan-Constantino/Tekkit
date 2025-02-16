@@ -22,7 +22,7 @@ function Services() {
             {/* Service 1 */}
             <div className="bg-white p-6 rounded-lg shadow flex items-start gap-4">
             <img 
-                src="public/twentyfour7sup.png" 
+                src="/24_7_sup_red.png" 
                 alt="24/7 Monitoring & Support" 
                 className="smallicons mx-auto mb-4" />
               <div>
@@ -38,7 +38,7 @@ function Services() {
             {/* Service 2 */}
             <div className="bg-white p-6 rounded-lg shadow flex items-start gap-4">
             <img 
-                src="public/cyber_sec.png" 
+                src="/cyber_sec_red.png" 
                 alt="Cybersecurity" 
                 className="smallicons mx-auto mb-4" />
               <div>
@@ -54,7 +54,7 @@ function Services() {
             {/* Service 3 */}
             <div className="bg-white p-6 rounded-lg shadow flex items-start gap-4">
             <img 
-                src="public/datarecovery.png" 
+                src="/data_rec_red.png" 
                 alt="Data Backup & Recovery" 
                 className="smallicons mx-auto mb-4" />
               <div>
@@ -69,7 +69,7 @@ function Services() {
             {/* Service 4 */}
             <div className="bg-white p-6 rounded-lg shadow flex items-start gap-4">
             <img 
-                src="public/service.png" 
+                src="/service_red.png" 
                 alt="IT Consulting & Strategy" 
                 className="smallicons mx-auto mb-4" />
               <div>
