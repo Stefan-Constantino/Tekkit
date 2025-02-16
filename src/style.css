@@ -89,9 +89,16 @@ header li {
     padding: 0 20px 0 20px;
 }
 
-header nav {
-    float: right;
-   
+.nav{
+    color: #071013;
+}
+
+.tekkbtn{
+    background-color: #071013;
+}
+
+.tekkbtn:hover {
+    background-color: #ed1b24;
 }
 
 #home {
@@ -104,12 +111,7 @@ header nav {
     text-align: center;
 }
 #home1 {
-    background-image:url(../Office1.jpg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-color: var(--image-blend-color);
-    background-blend-mode:overlay; 
+    background-color: #DFE0E2; 
     color: white;
     width: 100%;
     height: 100%;
@@ -156,8 +158,8 @@ header nav {
     max-width: 100%;
 }
 footer {
-    background: #10141f;
-    color: #fff;
+    background-color: #DFE0E2;
+    color: #071013;
     text-align: center;
     margin-top: auto;
     bottom: 0;
@@ -184,12 +186,21 @@ footer {
     height: auto;
     object-fit: fill;
 }
-#logo-container{
+#logo-container {
     display: flex;
     justify-content: center;
-    width: 10%;
-    height: 10%;
+    width: 50%;
+    height: auto;
 }
+
+@media (min-width: 768px) {
+  #logo-container {
+    width: 10%;
+    height: auto;
+  }
+}
+
+
 .logo-container2{
     display: flex;
     justify-content: center;
@@ -277,6 +288,10 @@ footer {
   
 
 
+.heroSection {
+    padding: 10rem 0;
+}
+
 /* 
 change color of HeroSection Img
 */
@@ -298,6 +313,7 @@ change color of HeroSection Img
     padding-bottom: 3%;
     color: white;
 }
+
 .centeredtext{
     text-align: center;
 }
@@ -378,7 +394,7 @@ change color of HeroSection Img
   
   .contact-form button {
     width: 100%;
-    background: #ff4d4d;
+    background: #071013;
     color: white;
     padding: 12px;
     border: none;
@@ -386,10 +402,6 @@ change color of HeroSection Img
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
-  }
-  
-  .contact-form button:hover {
-    background: #e60000;
   }
   
   .contact-form .error-message {

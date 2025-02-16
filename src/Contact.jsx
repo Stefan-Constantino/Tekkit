@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
             {errors.consent && <p className="error-message">{errors.consent.message}</p>}
     
-            <button type="submit">SCHEDULE NOW</button>
+            <button className="tekkbtn" type="submit">SCHEDULE NOW</button>
           </form>
         </div>
       );
