@@ -1,41 +1,53 @@
 import React from "react";
+import { FaCube } from "react-icons/fa";
 
 function Problem() {
-    return (
-        <section id="problem" className="py-12 bg-gray-50">
-            <div className="container mx-auto px-4">
-                {/* Heading Section */}
-                <div className="text-center mb-12">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">Here's what the other IT companies are doing</h2>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-600 mb-4">WRONG</h1>
-                    <h3 className="text-lg sm:text-xl md:text-2xl">and let us know if this is too on the nose...</h3>
-                </div>
+  return (
+    <section className="py-12 bg-gray-50 min-h-[70vh] flex items-center">
+      <div className="container mx-auto px-4 text-center flex flex-col justify-center h-full">
+        {/* Main Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-black">
+          Discover How Our Managed IT Services Keep Your Business Running Smoothly
+        </h2>
 
-                {/* Service Cards Section */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="service bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
-                        <h3 className="text-xl font-semibold mb-4">Your IT provider keeps falling short of their promises...</h3>
-                        <p className="text-lg">Many IT companies simply put in the minimum effort to retain customers. They rely entirely on third-party software to do all the work, and getting a real person to help with something seems like an impossible task...</p>
-                    </div>
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Feature 1 */}
+          <div>
+            <FaCube className="mx-auto text-4xl text-black mb-4" />
+            <h3 className="text-xl font-semibold mb-2">
+              Exceptional Customer Service
+            </h3>
+            <p className="text-gray-700">
+              Our services provide round-the-clock support to ensure your systems are always operational.
+            </p>
+          </div>
 
-                    <div className="service bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
-                        <h3 className="text-xl font-semibold mb-4">IT Consulting & Strategy</h3>
-                        <p className="text-lg">Providing expert advice on IT infrastructure, helping businesses align technology with their goals and plan for future growth.</p>
-                    </div>
+          {/* Feature 2 */}
+          <div>
+            <FaCube className="mx-auto text-4xl text-black mb-4" />
+            <h3 className="text-xl font-semibold mb-2">
+              Long heading is what you see here in this feature section
+            </h3>
+            <p className="text-gray-700">
+              We implement robust security measures to safeguard your data against threats.
+            </p>
+          </div>
 
-                    <div className="service bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
-                        <h3 className="text-xl font-semibold mb-4">Data Backup & Recovery</h3>
-                        <p className="text-lg">Regular backups of critical data and a disaster recovery plan to ensure business continuity in case of hardware failure, data loss, or natural disasters.</p>
-                    </div>
-
-                    <div className="service bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
-                        <h3 className="text-xl font-semibold mb-4">Cybersecurity</h3>
-                        <p className="text-lg">Implementing security measures like firewalls, antivirus software, threat detection, and encryption to protect against cyberattacks and data breaches.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+          {/* Feature 3 */}
+          <div>
+            <FaCube className="mx-auto text-4xl text-black mb-4" />
+            <h3 className="text-xl font-semibold mb-2">
+              Effortless Data Backups to Protect Your Valuable Information from Loss
+            </h3>
+            <p className="text-gray-700">
+              Our automated backup solutions ensure your critical data is always safe and retrievable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Problem;
