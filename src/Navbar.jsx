@@ -20,7 +20,7 @@ function Navbar() {
 
                 {/* Hamburger Icon for Mobile */}
                 <button
-                    className="lg:hidden p-2 text-white focus:outline-none"
+                    className="lg:hidden p-2 text-black focus:outline-none"
                     onClick={toggleMenu}
                 >
                     <svg
