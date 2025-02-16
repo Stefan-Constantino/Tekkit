@@ -3,7 +3,7 @@ import SocialMediaIcons from "./Links";
 
 function Footer() {
     return (
-        <footer className="text-white py-4 mt-auto">
+        <footer className="py-4 mt-auto">
             <div className="container mx-auto text-center">
                 <p>&copy; 2025 Tekk-It. All rights reserved.</p>
                 <SocialMediaIcons />

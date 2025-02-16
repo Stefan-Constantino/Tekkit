@@ -14,7 +14,7 @@ function Navbar() {
                 <div id="logo-container">
                     <Link to="/">
                         {/* Adjust logo size with Tailwind classes */}
-                        <img id="logo1" className="w-80 sm:w-88 md:w-56 lg:w-64 xl:w-72" src="tekkit.png" alt="Tekk-It Logo" />
+                        <img id="logo1" className="w-80 sm:w-88 md:w-56 lg:w-64 xl:w-72" src="tekkitStraight_cropped.png" alt="Tekk-It Logo" />
                     </Link>
                 </div>
 
@@ -42,31 +42,31 @@ function Navbar() {
                 {/* Navigation Menu */}
                 <nav id="navbar" className={`lg:flex ${isOpen ? "block" : "hidden"} lg:block`}>
                     <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
-                        <li>
+                        {/* <li>
                             <Link to="/" className="text-white hover:text-gray-300">
                                 Home
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
-                            <Link to="/#services" className="text-white hover:text-gray-300">
+                            <Link to="/services" className="nav hover:text-gray-500">
                                 Services
                             </Link>
                         </li>
                         <li>
-                            <Link to="/about" className="text-white hover:text-gray-300">
+                            <Link to="/about" className="nav hover:text-gray-500">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="text-white hover:text-gray-300">
-                                Schedule Appointment
+                            <Link to="/contact" className="nav hover:text-gray-500">
+                                Contact Us
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/ticket" className="text-white hover:text-gray-300">
                                 Submit A Ticket
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
             </div>
