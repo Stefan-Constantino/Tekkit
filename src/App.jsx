@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import Header from "./Header";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import Services from "./services";
@@ -11,22 +10,19 @@ import Problem from "./Problem";
 import Solution from "./Solution";
 import "./style.css";
 import AboutUsList from "./AboutUsList";
-// import Ticket from "./Ticket";
-import MapComponent from "./MapComponent";
 import ServicesSection from "./servicesSection";
 import ServicesSection1 from "./servicesSection1";
 import ServicesSection2 from "./servicesSection2";
 import ServicesSection3 from "./ServicesSection3";
 import ServicesSection4 from "./servicesSection4";
 import ServicesSection5 from "./servicesSection5";
+import FAQ from "./Faq";
+import ContactCard from "./ContactCard";
 
 function App() {
     return (
         <div className="app-container flex flex-col min-h-screen">
-            <div className="maincontent flex-grow">
-                {/* <Header /> */}
-                
-                {/* Define Routes here */}
+            <div className="maincontent flex-grow">                
                 <Routes>
                     <Route path="/" element={
                         <>  
@@ -57,10 +53,9 @@ function App() {
                             <div id="home1">
                                 <Navbar />
                             </div>
-                            <div className="row">
-                                <MapComponent />
-                                <Contact />
-                            </div>
+                            <Contact />
+                            <FAQ />
+                            <ContactCard />
                         </> 
                     } />
                     <Route path="/about" element={
@@ -72,16 +67,7 @@ function App() {
                             <AboutUsList />
                         </> 
                     } />
-                    {/* <Route path="/ticket" element={
-                        <>
-                            <div id="home">
-                                <Navbar />
-                            </div>
-                            <Ticket />
-                        </> 
-                    } /> */}
                 </Routes>
-                
             </div>
             <Footer />
         </div>
