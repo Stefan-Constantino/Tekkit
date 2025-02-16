@@ -4,7 +4,7 @@ export function ServicesSection5() {
   return (
     <section
       id="relume"
-      className="px-[5%] py-16 md:py-24 lg:py-28 bg-white"
+      className="px-4 md:px-[5%] py-16 md:py-24 lg:py-28 bg-white"
     >
       <div className="container mx-auto">
         {/* A max-width container to keep content left-aligned and 
