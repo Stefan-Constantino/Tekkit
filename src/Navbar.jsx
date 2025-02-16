@@ -8,7 +8,7 @@ function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <header className="w-full p-4">
+        <header className="w-full p-4 border-b border-gray-700">
             <div className="flex justify-between items-center">
                 {/* Logo */}
                 <div id="logo-container">
@@ -42,11 +42,6 @@ function Navbar() {
                 {/* Navigation Menu */}
                 <nav id="navbar" className={`lg:flex ${isOpen ? "block" : "hidden"} lg:block`}>
                     <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
-                        {/* <li>
-                            <Link to="/" className="text-white hover:text-gray-300">
-                                Home
-                            </Link>
-                        </li> */}
                         <li>
                             <Link to="/services" className="nav hover:text-gray-500">
                                 Services
@@ -62,11 +57,6 @@ function Navbar() {
                                 Contact Us
                             </Link>
                         </li>
-                        {/* <li>
-                            <Link to="/ticket" className="text-white hover:text-gray-300">
-                                Submit A Ticket
-                            </Link>
-                        </li> */}
                     </ul>
                 </nav>
             </div>
