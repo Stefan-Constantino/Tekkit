@@ -9,20 +9,19 @@ blend and/or change the color
 
 
 @font-face {
-    font-family: 'IBM Plex Sans';
-    src: url('/Fonts/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: 100 900; /* Variable font: supports weights from 100 to 900 */
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'IBM Plex Sans';
-    src: url('/Fonts/IBMPlexSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
-  }
+      font-family: 'IBM Plex Sans';
+      src: url('/Fonts/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
+      font-weight: 100 900; /* Variable font: supports weights from 100 to 900 */
+      font-style: normal;
+      font-display: swap;
+}
+@font-face {
+      font-family: 'IBM Plex Sans';
+      src: url('/Fonts/IBMPlexSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: italic;
+      font-display: swap;
+}
   
 :root {
     --image-blend-color3:#61892f;
