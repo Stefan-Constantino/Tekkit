@@ -17,9 +17,9 @@ export function ServicesSection4() {
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="/backupservpage.png"
               className="w-full object-cover"
-              alt="Relume placeholder image"
+              alt="backupservpage"
             />
           </div>
         </div>

@@ -36,9 +36,9 @@ export function ServicesSection1() {
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="/itsupportservpage.png"
               className="w-full object-cover"
-              alt="Relume placeholder image"
+              alt="itsupportservpage"
             />
           </div>
         </div>
