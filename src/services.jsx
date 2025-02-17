@@ -2,7 +2,7 @@ import React from "react";
 
 function Services() {
   return (
-    <section className="py-12 bg-gray-50 min-h-[90vh] flex items-center">
+    <section className="py-12 bg-gray-50 min-h-[90vh] flex items-center heroSection">
       <div className="container mx-auto px-4">
         <div className="md:flex md:items-start md:gap-8">
           {/* Left Column */}

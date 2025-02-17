@@ -90,9 +90,12 @@ export default function FAQ() {
             We're here to help you!
           </p>
           <div className="mt-6">
+            <a href="/contact" 
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <button className="bg-black text-white px-6 py-2 rounded-md tekkbtn transition">
               Contact
             </button>
+            </a>
           </div>
         </div>
       </div>

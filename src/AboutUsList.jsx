@@ -18,9 +18,11 @@ function AboutUsList() {
             the information you need and help you schedule a consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="/contact">
             <button className="bg-black text-white py-2 px-6 rounded-md hover:bg-gray-800 transition">
               Contact
             </button>
+            </a>
             <a href="/services" className="border border-black text-black py-2 px-6 rounded-md hover:bg-gray-200 transition">
               Learn More
             </a>

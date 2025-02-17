@@ -32,12 +32,12 @@ export function ServicesSection() {
             </button>
             </a>
             {/* "Sign Up" Button */}
-            <button
+            {/* <button
               title="Sign Up"
               className="border border-black text-black px-6 py-2 rounded-md hover:bg-gray-100 transition"
             >
               Sign Up
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

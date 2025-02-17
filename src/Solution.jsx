@@ -2,7 +2,7 @@ import React from "react";
 
 function Solution() {
   return (
-    <section className="bg-white py-12 min-h-[90vh] flex items-center">
+    <section className="bg-white py-12 min-h-[90vh] flex items-center heroSection">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Left Column */}
         <div className="md:w-1/2 px-4 text-center md:text-left">

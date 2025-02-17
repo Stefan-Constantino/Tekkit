@@ -17,7 +17,8 @@ export function ServicesSection5() {
             Contact us today to create a customized IT service package that meets
             your unique needs.
           </p>
-          <a href="/contact">
+          <a href="/contact"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <button
               title="Inquire"
               className="bg-black text-white px-6 py-2 rounded-md tekkbtn transition"
