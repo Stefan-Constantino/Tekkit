@@ -4,7 +4,7 @@ export function ServicesSection() {
   return (
     <section
       id="relume"
-      className="px-4 md:px-[5%] py-16 md:py-24 lg:py-28 bg-white"
+      className="px-4 md:px-[5%] py-16 md:py-24 lg:pb-28 lg:pt-36 bg-white"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-start gap-8">
         {/* Left Column */}
