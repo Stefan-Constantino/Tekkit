@@ -28,11 +28,13 @@ function App() {
                         <>  
                             <div id="home1">
                                 <Navbar />
-                                <HeroSection />
                             </div>
-                            <Services />
-                            <Problem />
-                            <Solution />
+                            <div className="md:pt-20 lg:pt-26">
+                                <HeroSection />
+                                <Services />
+                                <Problem />
+                                <Solution />
+                            </div>
                         </>
                     } />
                     <Route path="/services" element={
@@ -40,12 +42,14 @@ function App() {
                             <div id="home1">
                                 <Navbar />
                             </div>
-                            <ServicesSection />
-                            <ServicesSection1 />
-                            <ServicesSection2 />
-                            <ServicesSection3 />
-                            <ServicesSection4 />
-                            <ServicesSection5 />
+                            <div className="md:pt-20 lg:pt-26">
+                                <ServicesSection />
+                                <ServicesSection1 />
+                                <ServicesSection2 />
+                                <ServicesSection3 />
+                                <ServicesSection4 />
+                                <ServicesSection5 />
+                            </div>
                         </> 
                     } />
                     <Route path="/contact" element={
@@ -53,9 +57,11 @@ function App() {
                             <div id="home1">
                                 <Navbar />
                             </div>
-                            <Contact />
-                            <FAQ />
-                            <ContactCard />
+                            <div className="md:pt-20 lg:pt-26">
+                                <Contact />
+                                <FAQ />
+                                <ContactCard />
+                            </div>
                         </> 
                     } />
                     <Route path="/about" element={
@@ -63,8 +69,10 @@ function App() {
                             <div id="home1">
                                 <Navbar />
                             </div>
-                            <About />
-                            <AboutUsList />
+                            <div className="md:pt-20 lg:pt-26">
+                                <About />
+                                <AboutUsList />
+                            </div>
                         </> 
                     } />
                 </Routes>
@@ -75,3 +83,4 @@ function App() {
 }
 
 export default App;
+
