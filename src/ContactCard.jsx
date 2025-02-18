@@ -4,17 +4,8 @@ import SocialMediaIcons from "./Links";
 
 export function ContactCard() {
   return (
-    <section id="relume" className="px-4 md:px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="px-4 md:px-[5%] pt-8 pb-16 md:pt-12 md:pb-24 lg:pt-12 lg:pb-28">
       <div className="container">
-        <div className="rb-12 mb-12 max-w-lg mx-auto text-center md:mb-18 lg:mb-20">
-          {/* <p className="mb-3 font-semibold md:mb-4">Connect</p> */}
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-6xl lg:text-8xl">
-            Get in Touch
-          </h2>
-          <p className="md:text-md">
-            We’re here to assist you 24/7 with IT needs.
-          </p>
-        </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-3 md:gap-y-16">
           <div>
             <div className="mb-5 lg:mb-6 flex justify-left">
@@ -27,7 +18,7 @@ export function ContactCard() {
               Reach us anytime at our dedicated email support.
             </p>
             <a className="underline" href="mailto:support@tekk-it.com">
-              support@tekk-it.com
+              christian@tekk-it.com
             </a>
           </div>
           <div>
@@ -41,7 +32,7 @@ export function ContactCard() {
               Call us for immediate assistance with your IT issues.
             </p>
             <a className="underline" href="tel:+15551234567">
-              +1 (555) 123-4567
+              (917) 970-1127
             </a>
           </div>
           <div>
@@ -52,7 +43,7 @@ export function ContactCard() {
               Socials
             </h3>
             <p className="mb-5 md:mb-6">
-              Follow and message us for consultation and support.
+              Follow and message us for a consultation or support.
             </p>
             {/* <a className="underline" href="#">
               456 Tech Ave, Sydney NSW 2000 AU

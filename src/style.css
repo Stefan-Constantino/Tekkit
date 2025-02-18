@@ -1,8 +1,3 @@
-/*
-by changing image-blend-color, you can change the way all the images 
-blend and/or change the color 
-*/
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,18 +18,11 @@ blend and/or change the color
       font-display: swap;
 }
   
-:root {
-    --image-blend-color3:#61892f;
-    --image-blend-color2:#86c232;
-    --image-blend-color5:#222629;
-    --image-blend-color:#474b4f;
-    --image-blend-color1:#6b6e70;
-}
 body {
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.6;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 
 body, html ,#root {
@@ -47,7 +35,7 @@ body, html ,#root {
  ul {
     list-style-type: none;
     margin: 0;
-} */
+} 
 
 .app-container {
     display: flex;
@@ -117,7 +105,6 @@ header li {
 .tekkbtn:hover {
     background-color: #ed1b24;
 }
-
 
 #home {
     background-image:url(../Office1.jpg);
