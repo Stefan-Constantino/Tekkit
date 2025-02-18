@@ -24,7 +24,7 @@ function HeroSection() {
         {/* Right (Image) Section */}
         <div className="flex-1 px-4 mt-8 md:mt-0 flex items-center justify-center">
           <img 
-            src="/rupixen-zWe0UhHdi60-unsplash.jpg" 
+            src="/heroSection_img.png" 
             alt="hero" 
             className="w-full h-full object-cover rounded-md"
           />

@@ -24,8 +24,8 @@ function Solution() {
         {/* Right Column */}
         <div className="md:w-1/2 px-4 mt-8 md:mt-0">
           {/* Replace with your own content or an actual image */}
-          <div className="bg-gray-200 w-full h-64 flex items-center justify-center rounded-md">
-            <img src="/SolutionSection.jpg" alt="Solution" className="object-cover w-full h-full rounded-md" />
+          <div className="bg-gray-200 w-full h-74 flex items-center justify-center rounded-md">
+            <img src="/Solution_img.jpg" alt="Solution" className="object-cover w-full h-full rounded-md" />
           </div>
         </div>
       </div>
