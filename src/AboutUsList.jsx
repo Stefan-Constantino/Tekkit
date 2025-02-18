@@ -2,11 +2,11 @@ import React from "react";
 
 function AboutUsList() {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         {/* Left Column */}
         <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">
+          <h2 className="text-4xl md:text-5xl font-bold text-black">
             Get in Touch with Us
           </h2>
         </div>
