@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
-
-  // Function to close mobile menu when a link is clicked
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white p-4 border-b border-gray-700">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="sticky lg:fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-700">
+      <div className="container mx-auto p-4 flex justify-between items-center">
         {/* Logo */}
         <div id="logo-container">
           <Link
@@ -31,7 +29,7 @@ function Navbar() {
 
         {/* Hamburger Icon for Mobile */}
         <button
-          className="lg:hidden p-2 text-black focus:outline-none"
+          className="lg:hidden text-black focus:outline-none"
           onClick={toggleMenu}
         >
           <svg
@@ -50,13 +48,28 @@ function Navbar() {
           </svg>
         </button>
 
-        {/* Navigation Menu */}
-        <nav id="navbar" className={`lg:flex ${isOpen ? "block" : "hidden"} lg:block`}>
-          <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
+        {/* Desktop Navigation Menu */}
+        <nav className="hidden lg:flex">
+          <ul className="flex space-x-6">
+            <li>
+              <Link
+                to="/"
+                onClick={() => {
+                  window.scrollTo({ top: 0 });
+                  closeMenu();
+                }}
+                className="nav hover:text-gray-500"
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <Link
                 to="/services"
-                onClick={closeMenu}
+                onClick={() => {
+                  window.scrollTo({ top: 0 });
+                  closeMenu();
+                }}
                 className="nav hover:text-gray-500"
               >
                 Services
@@ -65,7 +78,10 @@ function Navbar() {
             <li>
               <Link
                 to="/about"
-                onClick={closeMenu}
+                onClick={() => {
+                  window.scrollTo({ top: 0 });
+                  closeMenu();
+                }}
                 className="nav hover:text-gray-500"
               >
                 About
@@ -74,7 +90,10 @@ function Navbar() {
             <li>
               <Link
                 to="/contact"
-                onClick={closeMenu}
+                onClick={() => {
+                  window.scrollTo({ top: 0 });
+                  closeMenu();
+                }}
                 className="nav hover:text-gray-500"
               >
                 Contact Us
@@ -83,6 +102,62 @@ function Navbar() {
           </ul>
         </nav>
       </div>
+
+      {/* Mobile Navigation Menu - rendered in flow so it pushes content down */}
+      {isOpen && (
+        <nav className="lg:hidden">
+          <ul className="flex flex-col space-y-4">
+            <li className="border-b border-gray-700">
+              <Link
+                to="/"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  closeMenu();
+                }}
+                className="nav hover:text-gray-500"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="border-b border-gray-700">
+              <Link
+                to="/services"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  closeMenu();
+                }}
+                className="nav hover:text-gray-500"
+              >
+                Services
+              </Link>
+            </li>
+            <li className="border-b border-gray-700">
+              <Link
+                to="/about"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  closeMenu();
+                }}
+                className="nav hover:text-gray-500"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  closeMenu();
+                }}
+                className="nav hover:text-gray-500"
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }
