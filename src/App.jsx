@@ -13,7 +13,7 @@ import AboutUsList from "./AboutUsList";
 import ServicesSection from "./servicesSection";
 import ServicesSection1 from "./servicesSection1";
 import ServicesSection2 from "./servicesSection2";
-import ServicesSection3 from "./ServicesSection3";
+import ServicesSection3 from "./servicesSection3";
 import ServicesSection4 from "./servicesSection4";
 import ServicesSection5 from "./servicesSection5";
 import FAQ from "./Faq";
