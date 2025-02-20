@@ -19,11 +19,11 @@ function AboutUsList() {
             the information you need and help you schedule a consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="/contact">
+            <Link to="/contact">
             <button className="bg-black text-white py-2 px-6 rounded-md transition tekkbtn">
               Contact
             </button>
-            </a>
+            </Link>
             <Link to="/services" 
                   className="border border-black text-black py-2 px-6 rounded-md hover:bg-gray-200 transition"
                   onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
