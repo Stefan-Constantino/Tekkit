@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -14,10 +15,10 @@ function HeroSection() {
           </p>
           {/* Button Wrapper to Prevent Full-Width Stretching */}
           <div className="flex justify-center md:justify-start">
-            <a href="/contact" 
+            <Link to="/contact" 
               className="inline-block bg-black text-white py-2 px-6 rounded-md transition tekkbtn">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
 

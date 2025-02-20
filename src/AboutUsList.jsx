@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AboutUsList() {
   return (
@@ -23,9 +24,9 @@ function AboutUsList() {
               Contact
             </button>
             </a>
-            <a href="/services" className="border border-black text-black py-2 px-6 rounded-md hover:bg-gray-200 transition">
+            <Link to="/services" className="border border-black text-black py-2 px-6 rounded-md hover:bg-gray-200 transition">
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

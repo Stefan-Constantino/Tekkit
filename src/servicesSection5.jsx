@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function ServicesSection5() {
   return (
@@ -17,7 +18,7 @@ export function ServicesSection5() {
             Contact us today to create a customized IT service package that meets
             your unique needs.
           </p>
-          <a href="/contact"
+          <Link to="/contact"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <button
               title="Inquire"
@@ -25,7 +26,7 @@ export function ServicesSection5() {
             >
               Schedule an Appointment
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

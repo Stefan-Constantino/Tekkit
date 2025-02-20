@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,12 +91,12 @@ export default function FAQ() {
             We're here to help you!
           </p>
           <div className="mt-6">
-            <a href="/contact" 
+            <Link to="/contact" 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <button className="bg-black text-white px-6 py-2 rounded-md tekkbtn transition">
               Contact
             </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

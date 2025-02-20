@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Solution() {
   return (
@@ -13,12 +14,12 @@ function Solution() {
             Connect with us to discover tailored IT solutions that meet your unique 
             business needs.
           </p>
-          <a 
-            href="/contact" 
+          <Link 
+            to="/contact" 
             className="inline-block bg-black text-white py-2 px-6 rounded-md tekkbtn transition"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
 
         {/* Right Column */}
