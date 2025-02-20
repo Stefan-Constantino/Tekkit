@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const {
@@ -9,9 +10,23 @@ function Contact() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    alert("Form submitted successfully!");
-  };
+    // Replace these values with your EmailJS credentials
+    emailjs.send(
+      "service_jsy0hfk",      // e.g., "service_xxxxx"
+      "template_hlgb3ed",     // e.g., "template_xxxxx"
+      data,
+      "b2HAlv91lN2A6lOmW"          // e.g., "user_xxxxx"
+    ).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Form submitted successfully!");
+      },
+      (error) => {
+        console.error("FAILED...", error);
+        alert("There was an error sending your message.");
+      }
+    );
+  }
 
   return (
     <section className="bg-white py-12">
