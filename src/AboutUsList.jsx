@@ -24,7 +24,9 @@ function AboutUsList() {
               Contact
             </button>
             </a>
-            <Link to="/services" className="border border-black text-black py-2 px-6 rounded-md hover:bg-gray-200 transition">
+            <Link to="/services" 
+                  className="border border-black text-black py-2 px-6 rounded-md hover:bg-gray-200 transition"
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
               Learn More
             </Link>
           </div>

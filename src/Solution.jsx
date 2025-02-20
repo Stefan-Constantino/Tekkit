@@ -17,6 +17,7 @@ function Solution() {
           <Link 
             to="/contact" 
             className="inline-block bg-black text-white py-2 px-6 rounded-md tekkbtn transition"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Contact Us
           </Link>
