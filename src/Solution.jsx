@@ -22,12 +22,11 @@ function Solution() {
         </div>
 
         {/* Right Column */}
-        <div className="md:w-1/2 px-4 mt-8 md:mt-0">
-          {/* Replace with your own content or an actual image */}
+        {/* <div className="md:w-1/2 px-4 mt-8 md:mt-0">
           <div className="bg-gray-200 w-full h-74 flex items-center justify-center rounded-md">
-            <img src="/Solution_img.jpg" alt="Solution" className="object-cover w-full h-full rounded-md" />
+            <img src="/behnam-norouzi-wjB38sQ2UBo-unsplash.jpg" alt="Solution" className="object-cover w-full h-full rounded-md" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

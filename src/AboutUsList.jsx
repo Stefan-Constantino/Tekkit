@@ -19,7 +19,7 @@ function AboutUsList() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a href="/contact">
-            <button className="bg-black text-white py-2 px-6 rounded-md hover:bg-gray-800 transition">
+            <button className="bg-black text-white py-2 px-6 rounded-md transition tekkbtn">
               Contact
             </button>
             </a>
